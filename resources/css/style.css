@@ -29,12 +29,16 @@ html {
   margin: 0 auto 0 auto;
 }
 
+.box {
+  padding: 1%;
+}
+
 
 .hero-text-box {
   position: absolute;
   width: 1140px;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
 }
 
@@ -42,12 +46,42 @@ html {
 .btn:visited{
   display: inline-block;
   margin: 20px;
-  padding: 10px 30px;
+  padding: 7px 12px;
   font-weight: 300%;
   text-decoration: none;
-  border-radius: 200px;
+  border-radius: 250px;
   transition: background-color 0.5s, color 0,2s;
 }
+
+.logoserv{
+  height: 40px;
+  width:auto;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+section {
+  padding:80px 0;
+}
+
+
+/* -------------------------------*/
+/* SERVICIOS */
+/* -------------------------------*/
+
+.long-copy{
+  line-height:145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+
+.box p{
+  font-size: 90%;
+  line-height: 145%;
+}
+
 
 /* -------------------------------*/
 /* BUTTONS */
@@ -81,12 +115,114 @@ h1 {
   margin: 0;
   color: #fff;
   font-size: 260%;
+  font-weight: 500;
   letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 180%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3:after {
+  display: block;
+  height: 2px;
+  background-color: #2980b9;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 110%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
 }
 
 .main-title {
   letter-spacing: 1px;
   word-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logo{
+  height: 60px;
+  width:auto;
+  float: left;
+  margin-top: 20px;
 
 }
-/*  */
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+
+}
+
+.main-nav li{
+  display:inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 4px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition:border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #2980b9;
+}
+
+
+/* -------------------------------*/
+/* IMAGENES */
+/* -------------------------------*/
+.section-images {
+  padding: 0;
+}
+
+.images-showcase {
+  list-style: none;
+  width:100%;
+}
+
+.images-showcase li{
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.imagen-servicio {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.imagen-servicio img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.imagen-servicio img:hover{
+  opacity: 1;
+  transform: scale(1.03);
+}
