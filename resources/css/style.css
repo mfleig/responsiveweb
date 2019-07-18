@@ -18,6 +18,14 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom:1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display:block;
+  height: 0;
+  visibility: hidden;
+}
 
 /* -------------------------------*/
 /* REUSABLE COMPONENTS */
@@ -54,10 +62,12 @@ html {
 }
 
 .logoserv{
-  height: 40px;
+  height: 55px;
   width:auto;
   display: block;
   margin-bottom: 10px;
+  position: relative;
+  left: 40px;
 
 }
 
@@ -109,6 +119,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -142,6 +153,7 @@ h4 {
   font-size: 110%;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-top: 30px;
 
 }
 
@@ -153,7 +165,7 @@ h4 {
 }
 
 .logo{
-  height: 60px;
+  height: 40px;
   width:auto;
   float: left;
   margin-top: 20px;
@@ -225,4 +237,132 @@ h4 {
 .imagen-servicio img:hover{
   opacity: 1;
   transform: scale(1.03);
+}
+
+
+
+
+/* -------------------------------*/
+/* WHY SECTION */
+/* -------------------------------*/
+
+.why-info {
+  margin-top: 30px;
+}
+
+.why-info p{
+  font-size: 90%;
+  line-height: 145%;
+}
+
+
+.why-img {
+  width: 150%;
+  float: left;
+  position: relative;
+  right: 300px;
+  margin-top: 30px;
+}
+
+.section-why {
+  background-color: #f0f0f0;
+}
+
+/* -------------------------------*/
+/* REASON SECTION*/
+/* -------------------------------*/
+
+
+
+.logoreason {
+  height: 120px;
+  width:auto;
+  margin-top: 20px;
+  position: relative;
+  left: 20px;
+}
+
+/* -------------------------------*/
+/* CONTACT*/
+/* -------------------------------*/
+
+.section-contact {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(img/vrwall.jpg);
+  background-size:cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.contact-form {
+  margin-top: 40px;
+  width: auto;
+  text-align: center;
+}
+
+/* -------------------------------*/
+/* FOOTER*/
+/* -------------------------------*/
+
+.social-media {
+  height: 30px;
+  width:auto;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+
+}
+
+.social-links li{
+  margin: 5px;
+}
+
+footer {
+  background-color: #4C4C4C;
+  color:white;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.footer-nav li,
+.social-links li{
+  display: inline-block;
+  list-style: none;
+  float: left;
+
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  color: #cccccc;
+  text-decoration: none;
+  margin: 20px;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  border-bottom: 2px solid #2980b9;
+  color:white;
+}
+
+footer p {
+  color:white;
+  text-align:center;
+  font-size: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  transition: all .2s ease-in-out;
+}
+
+.logo a:hover,
+.logo a:active {
+  transform: scale(3);
 }
